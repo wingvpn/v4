@@ -133,6 +133,24 @@ export BOLD="\e[1m"
 export WARNING="${RED}\e[5m"
 export UNDERLINE="\e[4m"
 
+###########- END COLOR CODE -##########
+tram=$( free -h | awk 'NR==2 {print $2}' )
+uram=$( free -h | awk 'NR==2 {print $3}' )
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+# Getting CPU Information
+cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
+cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
+cpu_usage+=" %"
+# TOTAL RAM
+total_ram=` grep "MemTotal: " /proc/meminfo | awk '{ print $2}'`
+totalram=$(($total_ram/1024))
+
+persenmemori="$(echo "scale=2; $usmem*100/$tomem" | bc)"
+#persencpu=
+persencpu="$(echo "scale=2; $cpu1+$cpu2" | bc)"
+
+
 # // Clear
 clear
 clear && clear && clear
@@ -234,38 +252,60 @@ export sem=$( curl -s https://raw.githubusercontent.com/artanodrop/permission/ma
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e "                         ${BIWhite}${UWhite}About${NC}"
-echo -e "                 ${BICyan}Base Script : ${BIPurple}Horassss${NC}"
-echo -e "                 ${BICyan}Bot Dev     : ${BIPurple}@xolvadev${NC}"
-echo -e "                 ${BICyan}Decodec     :${BIPurple} @boootzzzz${NC}"
-echo -e "               ${BICyan}${On_IPurple} SCRIPT MULTI VER.3 STABILE ${UWhite}${NC}"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
+echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+
+echo -e "${BIYellow}□ Server Uptime       = ${GREEN}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
+echo -e "${BIYellow}□ Current Time        = ${GREEN}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
+echo -e "${BIYellow}□ Operating System    = ${GREEN}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
+echo -e "${BIYellow}□ Current Domain      = ${GREEN}$( cat /etc/xray/domain )${NC}"
+echo -e "${BIYellow}□ NS Domain           = ${GREEN}$(cat /root/nsdomain)${NC}"
+echo -e "${BIYellow}□ Jumlah Ram          = ${GREEN}${totalram}MB"
+echo -e "${BIYellow}□ CPU Usage           = $cpu_usage"
+echo -e "${BIYellow}□ Clients Name        = ${GREEN}$Name${NC}"
+echo -e "${BIYellow}□ Expired Script VPS  = ${GREEN}$Exp${NC}"
+echo -e "${BIYellow}□ Time Reboot VPS     = 00:00 ${GREEN}( Jam 12 Malam )${NC}"
+echo -e "${BIYellow}□ License Limit       = ORDER ${GREEN}( 082131861788 )${NC}"
+echo -e "${BIYellow}□ AutoScript By Dev   = Wak ${GREEN}( AndyYuda )${NC}"
+
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │                  ${BIWhite}${UWhite}Server Informations${NC}"
+echo -e "${BICyan} │                  ${BIWhite}${UWhite}ANDYYUDA TUNELING${NC}"
 echo -e "${BICyan} │"
 echo -e " ${BICyan}│  ${BICyan}Use Core        :  ${BIPurple}XRAY${NC}"
-echo -e " ${BICyan}│  ${BICyan}Current Domain  :  ${BIPurple}$(cat /etc/xray/domain)${NC}"
 echo -e " ${BICyan}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+
+echo -e "${GREEN}INGATLAH KAWAN DILANGIT MASIH ADA LANGIT JAGAN LUPA DIRI${NC}" 
+
+echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}" 
+echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
+echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
+echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}" 
+  
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "     ${BICyan}[${BIWhite}01${BICyan}] SSH     ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"    "     ${BICyan}[${BIWhite}06${BICyan}] TRIALL    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${BICyan}[${BIWhite}02${BICyan}] VMESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}07${BICyan}] BACKUP    ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │"
 echo -e "     ${BICyan}[${BIWhite}03${BICyan}] VLESS   ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}08${BICyan}] ADD-HOST      ${NC}" "${BICyan}     │"
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}09${BICyan}] GEN SSL             │"
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETTING ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] INSTAL UDP${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "${BICyan}   │${NC}"
+echo -e "     ${BICyan}[${BIWhite}04${BICyan}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${BICyan}[${BIWhite}09${BICyan}] RUNNING             │"
+echo -e "     ${BICyan}[${BIWhite}05${BICyan}] SETING  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${BICyan}[${BIWhite}10${BICyan}] INSTAL UDP${BICyan}[${BIYellow}INSTAL${BICyan}]${NC}" "${BICyan} │${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e "${BICyan}                  MENU TAMBAHAN${NC} "
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${BICyan} │  \033[0m ${BOLD}${GREEN}XXX${BIYellow} SSH${GREEN}  XXX  ${BIYellow}VMESS  ${GREEN}XXX  ${BIYellow}VLESS  ${GREEN}XXX  ${BIYellow}TROJAN${GREEN} XXX $NC "
-echo -e "${BICyan} │  \033[0m ${Blue}     $ssh1         $vma           $vla           $tra              $NC"
+echo -e "     ${BICyan}[${BIWhite}11${BICyan}] DOMAIN FREE${NC} "
+echo -e "     ${BICyan}[${BIWhite}12${BICyan}] UPDATE MENU${NC} "
+echo -e "     ${BICyan}[${BIWhite}13${BICyan}] GANTI NS DOMAIN${NC} "
+echo -e "     ${BICyan}[${BIWhite}14${BICyan}] CLEAR SAMPAH${NC} "
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "${BICyan} │$NC ${BICyan}HARI ini${NC}: ${red}$ttoday$NC ${BICyan}KEMARIN${NC}: ${red}$tyest$NC ${BICyan}BULAN${NC}: ${red}$tmon$NC $NC"
 echo -e "${BICyan} └─────────────────────────────────────────────────────┘${NC}"
 echo -e " ${BICyan}┌─────────────────────────────────────┐${NC}"
-echo -e " ${BICyan}│  Version      ${NC} : Ver3. Last Update"
+echo -e " ${BICyan}│  Version      ${NC} : v4. Last Update"
 echo -e " ${BICyan}│  User       ${NC}   :\033[1;36m $Name \e[0m"
-echo -e " ${BICyan}│  Expiry script${NC} : ${BIYellow}$Exp${NC} Days"
+echo -e " ${BICyan}│  Day Expired${NC}   : $Exp"
 echo -e " ${BICyan}└─────────────────────────────────────┘${NC}"
 echo
 read -p " Select menu : " opt
@@ -279,9 +319,13 @@ case $opt in
 6) clear ; menu-trial ;;
 7) clear ; menu-bckp ;;
 8) clear ; add-host ;;
-9) clear ; certv2ray ;;
+9) clear ; running ;;
 10) clear ; clear ; wget --load-cookies /tmp/cookies.txt ${UDPX} -O install-udp && rm -rf /tmp/cookies.txt && chmod +x install-udp && ./install-udp ;;
 6969) clear ; wget https://raw.githubusercontent.com/artanodrop/v4/main/update.sh && chmod +x update.sh && ./update.sh && rm -f /root/update.sh ;;
+11) clear ; cf ;;
+12) clear ; up ;;
+13) clear ; slow ;;
+14) clear ; clearcache ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back exit" ; sleep 1 ; exit ;;
