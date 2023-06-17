@@ -307,7 +307,7 @@ wget -O about "https://raw.githubusercontent.com/wingvpn/v4/main/menu/about.sh"
 wget -O auto-reboot "https://raw.githubusercontent.com/wingvpn/v4/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/wingvpn/v4/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/wingvpn/v4/main/menu/bw.sh"
-wget -O up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh"
+wget -O up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh"
 wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh" && chmod +x /usr/bin/up
 
 # change port
@@ -321,7 +321,7 @@ wget -O genssl "https://raw.githubusercontent.com/Andyyuda/ver3/main/ssh/genssl.
 
 wget -O sshws "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/wingvpn/v4/main/status.sh"
-wget -O menu-backup "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu-bckp.sh"
+wget -O menu-backup "https://raw.githubusercontent.com/wingvpn/v4/main/backup/menu-backup.sh"
 wget -O backup "https://raw.githubusercontent.com/wingvpn/v4/main/backup/backup.sh"
 wget -O restore "https://raw.githubusercontent.com/wingvpn/v4/main/backup/restore.sh"
 
@@ -372,7 +372,7 @@ chmod +x xp
 chmod +x acs-set
 chmod +x sshws
 chmod +x status
-chmod +x menu-bckp
+chmod +x menu-backup
 chmod +x backup
 chmod +x restore
 chmod +x jam
