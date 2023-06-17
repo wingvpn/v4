@@ -293,7 +293,7 @@ wget -O autokill "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/autokill
 wget -O ceklim "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/tendang.sh"
 wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
-wget -O slow "https://raw.githubusercontent.com/Andyyuda/ver3/main/slow.sh"
+wget -O slow "https://raw.githubusercontent.com/wingvpn/v3/main/slow.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu-set.sh"
@@ -308,7 +308,7 @@ wget -O auto-reboot "https://raw.githubusercontent.com/wingvpn/v4/main/menu/auto
 wget -O restart "https://raw.githubusercontent.com/wingvpn/v4/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/wingvpn/v4/main/menu/bw.sh"
 wget -O up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh"
-wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh" && chmod +x /usr/bin/up
+wget -q -O /usr/bin/up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh" && chmod +x /usr/bin/up
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/wingvpn/v4/main/port/port-ssl.sh"
