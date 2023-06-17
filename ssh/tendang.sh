@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script Mod by ADAM SIJA
+# Wings Premium Auto Script
 #!/bin/bash
 clear
 MAX=1
