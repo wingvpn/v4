@@ -128,7 +128,7 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/artanodrop/v4/main/ssh/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/nginx.conf"
 mkdir -p /home/vps/public_html
 /etc/init.d/nginx restart
 
@@ -249,7 +249,7 @@ echo "Banner /etc/issue.net" >> /etc/ssh/sshd_config
 sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
 
 #install bbr dan optimasi kernel
-wget https://raw.githubusercontent.com/artanodrop/v4/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+wget https://raw.githubusercontent.com/wingvpn/v4/main/ssh/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 
 # blockir torrent
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
@@ -293,7 +293,7 @@ wget -O autokill "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/autokill
 wget -O ceklim "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/tendang.sh"
 wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
-wget -O slow "https://raw.githubusercontent.com/wingvpn/v3/main/slow.sh"
+wget -O slow "https://raw.githubusercontent.com/wingvpn/v4/main/slow.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu-set.sh"
