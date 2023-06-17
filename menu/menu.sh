@@ -121,7 +121,6 @@ export LIGHT='\033[0;37m'
 export NC='\033[0m'
 
 #Domain
-domain=$(cat /usr/local/etc/xray/domain)
 ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10)
 CITY=$(curl -s ipinfo.io/city)
 WKT=$(curl -s ipinfo.io/timezone)
@@ -276,6 +275,7 @@ echo -e "${BIYellow}□ Operating System    = ${GREEN}$( cat /etc/os-release | g
 echo -e "${BIYellow}□ Current Domain      = ${GREEN}$( cat /etc/xray/domain )${NC}"
 echo -e "${BIYellow}□ NS Domain           = ${GREEN}$(cat /root/nsdomain)${NC}"
 echo -e "${BIYellow}□ Jumlah Ram          = ${GREEN}${totalram}MB"
+echo -e "${BIYellow}□ Ram Usage           = $uram / $tram"
 echo -e "${BIYellow}□ CPU Usage           = $cpu_usage"
 echo -e "${BIYellow}□ Clients Name        = ${GREEN}$Name${NC}"
 echo -e "${BIYellow}□ Expired Script VPS  = ${GREEN}$Exp${NC}"
