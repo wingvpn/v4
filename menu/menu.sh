@@ -120,6 +120,19 @@ export CYAN='\033[0;36m'
 export LIGHT='\033[0;37m'
 export NC='\033[0m'
 
+#Domain
+domain=$(cat /usr/local/etc/xray/domain)
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10)
+CITY=$(curl -s ipinfo.io/city)
+WKT=$(curl -s ipinfo.io/timezone)
+IPVPS=$(curl -s ipinfo.io/ip)
+cname=$(awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo)
+cores=$(awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo)
+freq=$(awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo)
+tram=$(free -m | awk 'NR==2 {print $2}')
+uram=$(free -m | awk 'NR==2 {print $3}')
+fram=$(free -m | awk 'NR==2 {print $4}')
+
 # // Export Banner Status Information
 export EROR="[${RED} EROR ${NC}]"
 export INFO="[${YELLOW} INFO ${NC}]"
@@ -257,6 +270,7 @@ echo -e "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                  
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e "${BIYellow}□ Server Uptime       = ${GREEN}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
+echo -e "${BIYellow}□ ISP NAME            = ${GREEN}$ISP${NC}"
 echo -e "${BIYellow}□ Current Time        = ${GREEN}$( date -d "0 days" +"%d-%m-%Y | %X" )${NC}"
 echo -e "${BIYellow}□ Operating System    = ${GREEN}$( cat /etc/os-release | grep -w PRETTY_NAME | sed 's/PRETTY_NAME//g' | sed 's/=//g' | sed 's/"//g' ) ( $( uname -m) )${NC}"
 echo -e "${BIYellow}□ Current Domain      = ${GREEN}$( cat /etc/xray/domain )${NC}"
