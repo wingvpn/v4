@@ -308,7 +308,6 @@ wget -O auto-reboot "https://raw.githubusercontent.com/wingvpn/v4/main/menu/auto
 wget -O restart "https://raw.githubusercontent.com/wingvpn/v4/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/wingvpn/v4/main/menu/bw.sh"
 wget -O up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh"
-wget -q -O /usr/bin/up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh" && chmod +x /usr/bin/up
 
 # change port
 wget -O port-ssl "https://raw.githubusercontent.com/wingvpn/v4/main/port/port-ssl.sh"
@@ -327,7 +326,7 @@ wget -O restore "https://raw.githubusercontent.com/wingvpn/v4/main/backup/restor
 
 wget -O jam "https://raw.githubusercontent.com/wingvpn/v4/main/jam.sh"
 
-wget -q -O /usr/bin/up "https://raw.githubusercontent.com/Andyyuda/v4/main/up.sh" && chmod +x /usr/bin/up
+wget -q -O /usr/bin/up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh" && chmod +x /usr/bin/up
 chmod +x menu
 chmod +x menu-trial
 chmod +x menu-vmess
