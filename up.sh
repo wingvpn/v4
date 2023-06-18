@@ -11,15 +11,19 @@ export PURPLE='\033[0;35m'
 export CYAN='\033[0;36m'
 export LIGHT='\033[0;37m'
 export NC='\033[0m'
-#hapus menu
-rm -rf menu
-#download menu
-wget -O menu "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu.sh"
-#kata perintah nya
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu.sh" && chmod +x /usr/bin/menu
 
 echo -e "${GREEN} Mengecek Pembaruan "
-echo -e "${YELLOW}belum ada"
+echo -e "${YELLOW}Siap Memperbahrui"
+
+#hapus menu
+rm -rf menu
+rm -rf up
+#download menu
+wget -O menu "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu.sh"
+wget -O up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh"
+#kata perintah nya
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu.sh" && chmod +x /usr/bin/menu
+wget -q -O /usr/bin/up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh" && chmod +x /usr/bin/up
 
 echo -e "${GREEN} [INFO] Update Successfully"
 sleep 2
