@@ -292,10 +292,10 @@ echo -e " ${BICyan}└───────────────────�
 
 echo -e "${GREEN}Selama Masih Buatan Manusia Tetap Bisa Di Oprek${NC}" 
 
-echo -e "${GREEN}┌──────────────────────────────────────────────────┐${NC}" 
-echo -e "${GREEN}│  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
-echo -e "${GREEN}│  \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
-echo -e "${GREEN}└──────────────────────────────────────────────────┘${NC}" 
+echo -e "${GREEN}  ┌──────────────────────────────────────────────────┐${NC}" 
+echo -e "${GREEN}  │  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
+echo -e "${GREEN}  │  \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
+echo -e "${GREEN}  └──────────────────────────────────────────────────┘${NC}" 
   
 echo -e "     ${BICyan} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "   ${BICyan}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
