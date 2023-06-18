@@ -4,4 +4,4 @@
 ![This is an image](https://github.com/artanodrop/v4/blob/main/Cuy/IMG_20220914_140658.jpg)
 
 
-<pre><code>sysctl -w wget https://raw.githubusercontent.com/wingvpn/v4/main/up.sh && chmod +x up.sh && ./up.sh
+<pre><code>wget https://raw.githubusercontent.com/wingvpn/v4/main/up.sh && chmod +x up.sh && ./up.sh
