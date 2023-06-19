@@ -21,9 +21,13 @@ rm -rf up
 #download menu
 wget -O menu "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu.sh"
 wget -O up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh"
+wget -O user-lock "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/user-unlock.sh"
 #kata perintah nya
 wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu.sh" && chmod +x /usr/bin/menu
 wget -q -O /usr/bin/up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh" && chmod +x /usr/bin/up
+wget -q -O /usr/bin/user-lock "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/user-lock.sh" && chmod +x /usr/bin/user-lock
+wget -q -O /usr/bin/user-unlock "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/user-unlock.sh" && chmod +x /usr/bin/user-unlock
 
 echo -e "${GREEN} [INFO] Update Successfully"
 sleep 2
