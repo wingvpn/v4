@@ -66,7 +66,7 @@ case $opt in
 4) clear ; speedtest ; exit ;;
 5) clear ; about ; exit ;;
 6) clear ; auto-reboot ; exit ;;
-7) clear ; restart ; exit ;;
+7) clear ; restarts ; exit ;;
 8) clear ; nano /etc/issue.net ; exit ;; #ssh-vpn banner.conf
 9) clear ; bw ; exit ;;
 10) clear ; jam ; exit ;;
