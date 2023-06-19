@@ -401,7 +401,7 @@ echo -e "     ${BICyan}[${BIWhite}11${BICyan}] User Lock"
 echo -e "     ${BICyan}[${BIWhite}12${BICyan}] User Unlock"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e "\E[44;1;39m                     ⇱ AndyYuda TUNNELING ⇲                   \E[0m"
+echo -e "\E[44;1;39m                     ⇱ WINGVPN TUNNELING ⇲                   \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
