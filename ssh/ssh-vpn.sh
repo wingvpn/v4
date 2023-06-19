@@ -294,6 +294,8 @@ wget -O ceklim "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/ceklim.sh"
 wget -O tendang "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/tendang.sh"
 wget -O cf "https://raw.githubusercontent.com/Andyyuda/ver3/main/cf.sh"
 wget -O slow "https://raw.githubusercontent.com/wingvpn/v4/main/slow.sh"
+wget -O user-lock "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/user-lock.sh"
+wget -O user-unlock "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/user-unlock.sh"
 
 # menu system
 wget -O menu-set "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu-set.sh"
@@ -347,6 +349,8 @@ chmod +x delete
 chmod +x autokill
 chmod +x ceklim
 chmod +x tendang
+chmod +x user-unlock
+chmod +x user-lock
 
 chmod +x menu-set
 chmod +x menu-domain
