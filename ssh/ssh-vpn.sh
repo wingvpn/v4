@@ -281,7 +281,7 @@ wget -O menu-trgo "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu-t
 wget -O menu-trojan "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu-trojan.sh"
 
 # menu ssh ovpn
-wget -O menu-ssh "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu-ssh.sh"
+wget -O menun-ssh "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menun-ssh.sh"
 wget -O usernew "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/trial.sh"
 wget -O renew "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/renew.sh"
@@ -305,7 +305,7 @@ wget -O menu-webmin "https://raw.githubusercontent.com/wingvpn/v4/main/menu/menu
 wget -O speedtest "https://raw.githubusercontent.com/wingvpn/v4/main/ssh/speedtest_cli.py"
 wget -O about "https://raw.githubusercontent.com/wingvpn/v4/main/menu/about.sh"
 wget -O auto-reboot "https://raw.githubusercontent.com/wingvpn/v4/main/menu/auto-reboot.sh"
-wget -O restart "https://raw.githubusercontent.com/wingvpn/v4/main/menu/restart.sh"
+wget -O restarts "https://raw.githubusercontent.com/wingvpn/v4/main/menu/restarts.sh"
 wget -O bw "https://raw.githubusercontent.com/wingvpn/v4/main/menu/bw.sh"
 wget -O up "https://raw.githubusercontent.com/wingvpn/v4/main/up.sh"
 
@@ -336,7 +336,7 @@ chmod +x clearcache
 chmod +x menu-trgo
 chmod +x menu-trojan
 
-chmod +x menu-ssh
+chmod +x menun-ssh
 chmod +x usernew
 chmod +x trial
 chmod +x renew
@@ -357,7 +357,7 @@ chmod +x menu-webmin
 chmod +x speedtest
 chmod +x about
 chmod +x auto-reboot
-chmod +x restart
+chmod +x restarts
 chmod +x bw
 chmod +x cf
 chmod +x up
