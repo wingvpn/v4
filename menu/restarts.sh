@@ -25,11 +25,11 @@ echo -e   "Press x or [ Ctrl+C ] • To-Exit"
 echo -e   ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-read -p " Select menu : " Restart
+read -p " Select menu : " Restarts
 echo -e ""
 sleep 1
 clear
-case $Restart in
+case $Restarts in
                 1)
                 clear
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -69,7 +69,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 2)
                 clear
@@ -86,7 +86,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 3)
                 clear
@@ -103,7 +103,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 4)
                 clear
@@ -120,7 +120,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 5)
                 clear
@@ -137,7 +137,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 6)
                 clear
@@ -154,7 +154,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 7)
                 clear
@@ -171,7 +171,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 8)
                 clear
@@ -189,7 +189,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 9)
                 clear
@@ -208,7 +208,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 10)
                 clear
@@ -229,7 +229,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;
                 11)
                 clear
@@ -248,7 +248,7 @@ case $Restart in
                 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
                 echo ""
                 read -n 1 -s -r -p "Press any key to back on system menu"
-                restart
+                restarts
                 ;;                                                                         
                 0)
                 menu
@@ -258,5 +258,5 @@ case $Restart in
                 clear
                 exit
                 ;;
-                *) echo -e "" ; echo "Boh salah tekan, Sayang kedak Babi" ; sleep 1 ; restart ;;               
+                *) echo -e "" ; echo "Boh salah tekan, Sayang kedak Babi" ; sleep 1 ; restarts ;;               
         esac
