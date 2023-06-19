@@ -397,6 +397,8 @@ echo -e "     ${BICyan}[${BIWhite}7${BICyan}] Auto Kill user SSH    "
 echo -e "     ${BICyan}[${BIWhite}8${BICyan}] Cek Member SSH"
 echo -e "     ${BICyan}[${BIWhite}9${BICyan}] Trial SSH"
 echo -e "     ${BICyan}[${BIWhite}10${BICyan}] Restart All Service"
+echo -e "     ${BICyan}[${BIWhite}11${BICyan}] User Lock"
+echo -e "     ${BICyan}[${BIWhite}12${BICyan}] User Unlock"
 
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m                     ⇱ AndyYuda TUNNELING ⇲                   \E[0m"
@@ -416,8 +418,8 @@ case $opt in
 8) clear ; member ;;
 9) clear ; trialssh ;;
 10) clear ; restarts ;;
-10) clear ; restarts ;;
-10) clear ; restarts ;;
+11) clear ; user-lock ;;
+12) clear ; user-unlock ;;
 0) clear ; menu ;;
 x) exit ;;
 *) echo -e "" ; echo "Press any key to back on menu" ; sleep 1 ; menu ;;
