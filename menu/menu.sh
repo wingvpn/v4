@@ -332,6 +332,7 @@ else
 fi;
 echo -e " ${BICyan}└─────────────────────────────────────┘${NC}"
 echo
+echo
 read -p " Select menu : " opt
 echo -e ""
 case $opt in
