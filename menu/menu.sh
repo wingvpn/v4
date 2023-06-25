@@ -332,9 +332,8 @@ else
 fi;
 echo -e " ${BICyan}└─────────────────────────────────────┘${NC}"
 echo
-echo
 read -p " Select menu : " opt
-echo -e ""
+echo -e
 case $opt in
 1) clear ; menun-ssh ;;
 2) clear ; menu-vmess ;;
