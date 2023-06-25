@@ -320,7 +320,7 @@ datediff() {
     d2=$(date -d "$2" +%s)
     echo -e " ${BICyan}│$NC  Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
 }
-mai="datediff "$Exp" "$DATE""
+mai="datediff "$Exp" "$DATE"
 echo -e " ${BICyan}┌─────────────────────────────────────┐${NC}"
 echo -e " ${BICyan}│  Version       : $(cat /opt/.ver) Last Update ${NC}"
 echo -e " ${BICyan}│  User          :\033[1;36m $Name \e[0m"
