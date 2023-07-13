@@ -107,14 +107,14 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}TROJAN ${NC}"
+echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "       ${BIGreen}${BIGreen}TROJAN ${NC}"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create Account Trojan    "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account Trojan     "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Extending Account Trojan Active Life      "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Delete Account Trojan     "
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Check User Login Trojan     "
+echo -e "     ${PURPLE}[${BIGreen}01${PURPLE}] Create Account Trojan    "
+echo -e "     ${PURPLE}[${BIGreen}02${PURPLE}] Trial Account Trojan     "
+echo -e "     ${PURPLE}[${BIGreen}03${PURPLE}] Extending Account Trojan Active Life      "
+echo -e "     ${PURPLE}[${BIGreen}04${PURPLE}] Delete Account Trojan     "
+echo -e "     ${PURPLE}[${BIGreen}05${PURPLE}] Check User Login Trojan     "
 
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
