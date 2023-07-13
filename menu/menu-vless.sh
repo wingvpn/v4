@@ -107,16 +107,16 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}VLESS ${NC}"
+echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "       ${BIGreen}${BIGreen}VLESS ${NC}"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create Account XRAY Vless Websocket  "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account XRAY Vless   "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Extending Account XRAY Vless Active "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Delete Account XRAY Vless Websocket    "
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Check User Login XRAY Vless     "
+echo -e "     ${PURPLE}[${BIGreen}01${PURPLE}] Create Account XRAY Vless Websocket  "
+echo -e "     ${PURPLE}[${BIGreen}02${PURPLE}] Trial Account XRAY Vless   "
+echo -e "     ${PURPLE}[${BIGreen}03${PURPLE}] Extending Account XRAY Vless Active "
+echo -e "     ${PURPLE}[${BIGreen}04${PURPLE}] Delete Account XRAY Vless Websocket    "
+echo -e "     ${PURPLE}[${BIGreen}05${PURPLE}] Check User Login XRAY Vless     "
 
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e " ${PURPLE}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu :  "  opt
