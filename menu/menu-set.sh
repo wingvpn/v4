@@ -41,7 +41,7 @@ echo "Checking VPS"
 
 clear
 echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}SETTING ${NC}"
+echo -e "       ${BIGreen}${BIGreen}SETTING ${NC}"
 echo -e ""
 echo -e "     ${PURPLE}[${BIGreen}01${PURPLE}] Panel Domain      "
 echo -e "     ${PURPLE}[${BIGreen}02${PURPLE}] Change Port All Account      "
