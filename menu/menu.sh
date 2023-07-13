@@ -280,7 +280,7 @@ echo -e  "${PURPLE} □ CPU Usage           = $cpu_usage"
 echo -e  "${PURPLE} □ Expired Script VPS  = ${BIGreen}$Exp${NC}"
 
 echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${PURPLE} │                 ${BIGreen}${BIGreen}WINGS TUNELING${NC}"
+echo -e "${PURPLE} │                  ${BIGreen}${BIGreen}WINGS TUNELING${NC}"
 echo -e "${PURPLE} │"
 echo -e " ${PURPLE}│  ${BICyan}Use Core        :  ${PURPLE}XRAY${NC}"
 echo -e " ${PURPLE}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
@@ -312,7 +312,7 @@ DATE=$(date +'%d %B %Y')
 datediff() {
     d1=$(date -d "$1" +%s)
     d2=$(date -d "$2" +%s)
-    echo -e " ${BICyan}│$NC  Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
+    echo -e " ${PURPLE}│$NC  Expiry In     : $(( (d1 - d2) / 86400 )) Days $NC"
 }
 mai="datediff "$Exp" "$DATE""
 echo -e " ${PURPLE}┌─────────────────────────────────────┐${NC}"
