@@ -265,7 +265,7 @@ export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
 echo -e  "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
-echo -e  "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                      \E[0m"
+echo -e  "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                     \E[0m"
 echo -e  "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e  "${PURPLE} □ Server Uptime       = ${BIGreen}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
