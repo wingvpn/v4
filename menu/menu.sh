@@ -300,7 +300,7 @@ echo -e "     ${PURPLE}[${BIWhite}03${PURPLE}] VLESS   ${BICyan}[${BIYellow}Menu
 echo -e "     ${PURPLE}[${BIWhite}04${PURPLE}] TROJAN  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}" "     ${PURPLE}[${BIWhite}09${PURPLE}] RUNNING             │"
 echo -e "     ${PURPLE}[${BIWhite}05${PURPLE}] SETING  ${BICyan}[${BIYellow}Menu${BICyan}]${NC}"  "     ${PURPLE}[${BIWhite}10${PURPLE}] INSTAL UDP${BICyan}[${BIYellow}INSTAL${BICyan}]${NC}" "${PURPLE} │${NC}"
 echo -e " ${PURPLE}└─────────────────────────────────────────────────────┘${NC}"
-echo -e "${PURPLE}                  MENU TAMBAHAN${NC} "
+echo -e "${PURPLE}                    MENU TAMBAHAN${NC} "
 echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
 echo -e "     ${PURPLE}[${BIWhite}11${PURPLE}] DOMAIN FREE${NC} "
 echo -e "     ${PURPLE}[${BIWhite}12${PURPLE}] UPDATE MENU${NC} "
