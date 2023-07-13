@@ -107,15 +107,15 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}TRIALL ${NC}"
+echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "       ${BIGreen}${BIGreen}TRIALL ${NC}"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Trial Account SSH & OVPN   "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account VMESS    "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Trial Account VLESS     "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Trial Account TROJAN   "
+echo -e "     ${PURPLE}[${BIGreen}01${PURPLE}] Trial Account SSH & OVPN   "
+echo -e "     ${PURPLE}[${BIGreen}02${PURPLE}] Trial Account VMESS    "
+echo -e "     ${PURPLE}[${BIGreen}03${PURPLE}] Trial Account VLESS     "
+echo -e "     ${PURPLE}[${BIGreen}04${PURPLE}] Trial Account TROJAN   "
 
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e " ${PURPLE}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu : " opt
