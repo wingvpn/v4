@@ -116,7 +116,7 @@ echo -e "     ${PURPLE}[${BIGreen}03${PURPLE}] Extending Account Trojan Active L
 echo -e "     ${PURPLE}[${BIGreen}04${PURPLE}] Delete Account Trojan     "
 echo -e "     ${PURPLE}[${BIGreen}05${PURPLE}] Check User Login Trojan     "
 
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e " ${PURPLE}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu : " opt
