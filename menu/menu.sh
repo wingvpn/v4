@@ -286,7 +286,7 @@ echo -e "${BICyan} │"
 echo -e " ${BICyan}│  ${BICyan}Use Core        :  ${BIPurple}XRAY${NC}"
 echo -e " ${BICyan}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
-echo -e ""
+
 echo -e "${GREEN}  ┌──────────────────────────────────────────────────┐${NC}" 
 echo -e "${GREEN}  │  \033[0m ${BOLD}${YELLOW}SSH     VMESS       VLESS      TROJAN $NC" 
 echo -e "${GREEN}  │  \033[0m ${Blue} $ssh1        $vma           $vla          $tra $NC" 
