@@ -280,7 +280,7 @@ echo -e  "${PURPLE} □ CPU Usage           = $cpu_usage"
 echo -e  "${PURPLE} □ Expired Script VPS  = ${GREEN}$Exp${NC}"
 
 echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${PURPLE} │                  ${BIWhite}${UWhite}WINGS TUNELING${NC}"
+echo -e "${PURPLE} │                  ${BiwhiteGREEN}${UWhite}WINGS TUNELING${NC}"
 echo -e "${PURPLE} │"
 echo -e " ${PURPLE}│  ${BICyan}Use Core        :  ${BIPurple}XRAY${NC}"
 echo -e " ${PURPLE}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
@@ -288,7 +288,7 @@ echo -e " ${PURPLE}└───────────────────�
 
 echo -e "${PURPLE} ┌──────────────────────────────────────────────────┐${NC}" 
 echo -e "${PURPLE} │  \033[0m  ${BOLD}${YELLOW}SSH      VMESS      VLESS     TROJAN $NC" 
-echo -e "${PURPLE} │  \033[0m  ${Blue} $ssh1          $vma          $vla         $tra $NC" 
+echo -e "${PURPLE} │  \033[0m  ${Blue} $ssh1         $vma          $vla         $tra $NC" 
 echo -e "${PURPLE} └──────────────────────────────────────────────────┘${NC}" 
   
 echo -e "     ${PURPLE} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
