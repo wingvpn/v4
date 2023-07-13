@@ -277,7 +277,6 @@ echo -e "${BIYellow}□ NS Domain           = ${GREEN}$(cat /root/nsdomain)${NC}
 echo -e "${BIYellow}□ Jumlah Ram          = ${GREEN}${totalram}MB"
 echo -e "${BIYellow}□ Ram Usage           = $uram / $tram"
 echo -e "${BIYellow}□ CPU Usage           = $cpu_usage"
-echo -e "${BIYellow}□ Clients Name        = ${GREEN}$Name${NC}"
 echo -e "${BIYellow}□ Expired Script VPS  = ${GREEN}$Exp${NC}"
 
 echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
