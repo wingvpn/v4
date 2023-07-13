@@ -106,16 +106,16 @@ MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 
 clear
-echo -e "${BICyan} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "       ${BIWhite}${UWhite}VMESS ${NC}"
+echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
+echo -e "       ${BIGreen}${BIGreen}VMESS ${NC}"
 echo -e ""
-echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Create Account XRAY Vmess Websocket "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Trial Account XRAY Vmess     "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Extending Account XRAY Vmess Active "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Delete Account XRAY Vmess Websocket  "
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Check User Login XRAY Vmess     "
+echo -e "     ${PURPLE}[${BIGreen}01${PURPLE}] Create Account XRAY Vmess Websocket "
+echo -e "     ${PURPLE}[${BIGreen}02${PURPLE}] Trial Account XRAY Vmess     "
+echo -e "     ${PURPLE}[${BIGreen}03${PURPLE}] Extending Account XRAY Vmess Active "
+echo -e "     ${PURPLE}[${BIGreen}04${PURPLE}] Delete Account XRAY Vmess Websocket  "
+echo -e "     ${PURPLE}[${BIGreen}05${PURPLE}] Check User Login XRAY Vmess     "
 
-echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
+echo -e " ${PURPLE}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
 read -p " Select menu :  "  opt
