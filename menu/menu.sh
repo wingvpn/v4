@@ -264,9 +264,9 @@ export sem=$( curl -s https://raw.githubusercontent.com/artanodrop/permission/ma
 export pak=$( cat /home/.ver)
 IPVPS=$(curl -s ipinfo.io/ip )
 clear
-echo -e  "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e  "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e  "\E[44;1;39m                     ⇱ INFORMASI VPS ⇲                        \E[0m"
-echo -e  "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
+echo -e  "${PURPLE}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 
 echo -e  "${PURPLE} □ Server Uptime       = ${BIGreen}$( uptime -p  | cut -d " " -f 2-10000 ) ${NC}"
 echo -e  "${PURPLE} □ ISP NAME            = ${BIGreen}$ISP${NC}"
@@ -280,16 +280,16 @@ echo -e  "${PURPLE} □ CPU Usage           = $cpu_usage"
 echo -e  "${PURPLE} □ Expired Script VPS  = ${BIGreen}$Exp${NC}"
 
 echo -e "${PURPLE} ┌─────────────────────────────────────────────────────┐${NC}"
-echo -e "${PURPLE} │               ${BIGreen}${BIGreen}WINGS TUNELING${NC}"
+echo -e "${PURPLE} │                 ${BIGreen}${BIGreen}WINGS TUNELING${NC}"
 echo -e "${PURPLE} │"
-echo -e " ${PURPLE}│  ${BICyan}Use Core        :  ${BIPurple}XRAY${NC}"
+echo -e " ${PURPLE}│  ${BICyan}Use Core        :  ${PURPLE}XRAY${NC}"
 echo -e " ${PURPLE}│  ${BICyan}IP-VPS          :  ${BIYellow}$IPVPS${NC}"
 echo -e " ${PURPLE}└─────────────────────────────────────────────────────┘${NC}"
 
-echo -e "${PURPLE} ┌──────────────────────────────────────────────────┐${NC}" 
-echo -e "${PURPLE} │  \033[0m  ${BOLD}${YELLOW}SSH      VMESS      VLESS     TROJAN $NC" 
-echo -e "${PURPLE} │  \033[0m  ${Blue} $ssh1         $vma          $vla         $tra $NC" 
-echo -e "${PURPLE} └──────────────────────────────────────────────────┘${NC}" 
+echo -e "${PURPLE}  ┌──────────────────────────────────────────────────┐${NC}" 
+echo -e "${PURPLE}  │  \033[0m  ${BOLD}${YELLOW}SSH      VMESS      VLESS     TROJAN $NC" 
+echo -e "${PURPLE}  │  \033[0m  ${Blue} $ssh1         $vma          $vla         $tra $NC" 
+echo -e "${PURPLE}  └──────────────────────────────────────────────────┘${NC}" 
   
 echo -e "     ${PURPLE} SSH ${NC}: $ressh"" ${BICyan} NGINX ${NC}: $resngx"" ${BICyan}  XRAY ${NC}: $resv2r"" ${BICyan} TROJAN ${NC}: $resv2r"
 echo -e "   ${PURPLE}     STUNNEL ${NC}: $resst" "${BICyan} DROPBEAR ${NC}: $resdbr" "${BICyan} SSH-WS ${NC}: $ressshws"
