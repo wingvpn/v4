@@ -6,7 +6,7 @@ mkdir -p /root/xray
 clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=givpn.online
+DOMAIN=tunneling.cloud
 SUB_DOMAIN=asx-${sub}.tunneling.cloud
 NS_DOMAIN=slowdns-${subsl}.tunneling.cloud
 CF_ID=newagoez@gmail.com
