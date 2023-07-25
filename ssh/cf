@@ -6,9 +6,9 @@ mkdir -p /root/xray
 clear
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c5)
 subsl=$(</dev/urandom tr -dc a-z0-9 | head -c5)
-DOMAIN=tunneling.cloud
-SUB_DOMAIN=asx-${sub}.tunneling.cloud
-NS_DOMAIN=slowdns-${subsl}.tunneling.cloud
+DOMAIN=tunneling.live
+SUB_DOMAIN=asx-${sub}.tunneling.live
+NS_DOMAIN=slowdns-${subsl}.tunneling.live
 CF_ID=newagoez@gmail.com
 CF_KEY=61dcf048264d5f9a47b379eecffb72d3bb5df
 set -euo pipefail
